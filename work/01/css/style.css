@@ -1,0 +1,13 @@
+p {
+    color: green;
+    font-size: 2em;
+}
+
+#lala {
+    font-style: oblique;
+    font-weight: bold;
+}
+
+figre {
+    shape-outside: polygon(auto);
+}

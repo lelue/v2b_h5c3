@@ -1,0 +1,67 @@
+<!DOCTYPE HTML>
+<html>
+<!-- HEAD -->
+    <head>
+        <meta charset="utf-8">
+        <meta name="description" content="Zusammenfassung des Dokuments für zB Google">
+        <meta name="author" content="lelue">
+        <link rel=stylesheet type="text/css" href="css/style.css">
+        <title>Brackets Live-Vorschau</title>
+    </head>
+<!-- END HEAD -->
+<!-- BODY -->
+    <body>
+        <h1>Erstellt mit Brackets</h1>
+        <h3>Tutorials: Video2Brain</h3>
+        <div id="lists">
+            <ul>
+                <li>one</li>
+                <li>two</li>
+                <li>three</li>
+            </ul>
+            <ol>
+                <li>one</li>
+                <li>two</li>
+                <li>three</li>
+            </ol>
+            <dl>
+                <dt>eins</dt>
+                <dd>one</dd>
+                <dt>zwei</dt>
+                <dd>two</dd>
+                <dt>drei</dt>
+                <dd>three</dd>
+            </dl>
+        </div>
+        <div id="bild">
+            <!-- figure macht img zu eigenständigem wichtigen blockelement > kein inline mehr -->
+            <figure>
+                <img src="img/dude_green.png" width="200" height="200" alt="green dude" title="Mr Awesome">
+                <figcaption>LeLue</figcaption>
+            </figure>
+        </div>
+        <div id="videos">
+            <!-- VIDEO nur eine quelle > evtl browser probs -->
+            <video poster="img/dude_green.png" src="vid/MVI_9888.mp4" title="BMX Contest" width="720" height="405" controls></video>
+            <!-- VIDEO zwei sources > für andere browser anderes format -->
+            <video poster="img/dude_green.png" title="BMX Contest" width="720" height="405" controls>
+                <source src="vid/MVI_9888.mp4" type="video/mp4">
+                <source src="vid/MVI_9888.ogg" type="video/ogg">
+                <!-- falls browser html5 nicht unterstützt -->
+                <p>Ihr Browser unterstützt HTML5 Video nicht. <a href="vid/MVI_9888.mp4">Download Video.</a></p>
+            </video>
+        </div>
+        <div id="audio">
+            <!-- selbes problem wir video > evtl. codec probs -->
+            <audio src="vid/Song.mp3" title="MySong" controls preload="metadata" autoplay loop></audio>
+            <!-- audio mit verschiedenen sources -->
+            <audio>
+                <source src="vid/Song.mp3" type="audio/mp3">
+                <source src="vid/Song.ogg" type="audio/ogg">
+                <source src="vid/Song_1.wav" type="audio/wav">
+                <p>Ihr Browser unterstützt HTML5 Audio nicht. <a href="vid/Song.mp3">Download MP3.</a></p>
+            </audio>
+        </div>
+    </body>
+<!-- END BODY -->
+</html>
